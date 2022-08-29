@@ -99,7 +99,8 @@ header button:hover{
 
 section{
     color: white;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
 }
 section a{
     color: rgb(188, 188, 229);
