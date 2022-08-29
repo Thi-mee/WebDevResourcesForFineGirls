@@ -12,6 +12,7 @@ body{
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     overflow-y: hidden;
+    padding-top: 0.3em;
 }
 p{
     margin: 0;
@@ -20,11 +21,17 @@ p{
 img{
     width: 100%;
 }
-
+button{
+    cursor: pointer;
+}
+button:hover{
+    transform: scale(1.05);
+}
 header{
     height: 100vh;
 }
 .main-header{
+    margin-top: 3em;
     margin-bottom: 3em;
 }
 .main-header h1{
@@ -62,6 +69,10 @@ header .h-f-s{
 header .h-s-s{
     flex: 1 1 100%;
 }
+header .h-s-s p{
+    text-indent: 30px;
+    color: rgb(80, 80, 80);
+}
 header button{
     color: white;
     background-color: rgb(245, 149, 165);
@@ -90,8 +101,8 @@ section{
     color: white;
     min-height: 100vh;
 }
-section ul li a{
-    color: rgb(176, 176, 222);
+section a{
+    color: rgb(188, 188, 229);
     font-weight: bold;
 }
 section a:active{
@@ -102,16 +113,43 @@ section a:visited{
     color: rgb(170, 170, 170);
 
 }
-section.topic.one{
-    background-color: rgb(174, 47, 68);
+section.topic{
     padding: 3em 0 2em;
     text-align: center;
 }
-section.topic.one h2{
-    color: rgb(226, 155, 168);
+section.topic h2{
     font-size: 2.5rem;
 }
-section.topic.one p{
-    max-width: 40ch;
+section.topic p{
+    max-width: 50ch;
     margin-inline: auto;
+}
+section.topic.one{
+    background-color: rgb(174, 47, 68);
+}
+section.topic.one h2{
+    color: rgb(226, 155, 168);
+}
+section.topic.two{
+    background-color: rgb(80, 89, 169);
+}
+section.topic.two h2{
+    color: rgb(165, 170, 213);
+}
+.navigation{
+    margin-top: 2em;
+}
+.navigation button{
+    padding: 0.75em 3em;
+    margin-inline: 1.3em;
+    border: none;
+    background-color: rgb(89, 89, 184);
+    color: white;
+    font-family: inherit;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: .5em;
+}
+section.two .navigation button{
+    background-color: rgb(216, 78, 112);
 }
